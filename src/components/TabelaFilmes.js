@@ -20,8 +20,8 @@ const TabelaFilmes = () => {
                 <span className="nomeTabela">Filmes</span>
                 {
                     filmes && filmes.map((filme) => (
-                            <aside className="listaFilmes">
-                                <span key={filme.title} className="conteudoFilmes">
+                            <aside key={filme.title} className="listaFilmes">
+                                <span  className="conteudoFilmes">
                                     <span className="tituloFilme">{filme.title}</span>
                                     <span className="dataFilme">{(filme.release_date).split('-').reverse().join('/')}</span>
                                 </span>

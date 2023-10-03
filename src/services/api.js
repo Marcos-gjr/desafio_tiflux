@@ -37,27 +37,35 @@ function getSwapi(espec) {
     return axios.get(`https://swapi.dev/api/${espec}`);
 }
 
-/*
+console.log(fetchAllItems())
 async function fetchAllItems() {
     const totalPages = 9; // O número total de páginas
   
     // Crie um array de promessas para buscar todas as páginas em paralelo
     const promises = [];
     for (let page = 1; page <= totalPages; page++) {
-      promises.push(fetchPage(page));
+      promises.push(getSwapi("people/?page=" + page));
     }
     try {
         // Aguarde todas as promessas serem resolvidas
         const results = await Promise.all(promises);
 
-        // Combine os resultados de todas as páginas em um único array
+        // name, height, birth_year, created, editedCombine os resultados de todas as páginas em um único array 
         const allItems = results.flat();
 
-        return allItems;
+        const extractedData = allItems.map((item) => ({
+            name: item.name,
+            height: item.height,
+            birth_year: item.birth_year,
+            created: item.created,
+            edited: item.edited
+          }));
+
+        return extractedData;
     } catch (error) {
         throw error;
     }
-}*/
+}
 
 
 export {obterFilmes, obterPessoas, obterPlanetas, obterEspecies, obterNaves};

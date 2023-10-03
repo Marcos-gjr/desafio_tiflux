@@ -22,13 +22,25 @@
 .btnPessoas:active{
     box-shadow: 1px 3px 4px 0px #EA580C;
 }
+.btnPessoasAtivo{
+    box-shadow: 1px 3px 4px 0px #EA580C;
+}
 .btnPlanetas:active{
+    box-shadow: 1px 3px 4px 0px #6366F1;
+}
+.btnPlanetasAtivo{
     box-shadow: 1px 3px 4px 0px #6366F1;
 }
 .btnEspecies:active{
     box-shadow: 1px 3px 4px 0px #F7E3A2;
 }
+.btnEspeciesAtivo{
+    box-shadow: 1px 3px 4px 0px #F7E3A2;
+}
 .btnNaves:active{
+    box-shadow: 1px 3px 4px 0px #0CC4B6;
+}
+.btnNavesAtivo{
     box-shadow: 1px 3px 4px 0px #0CC4B6;
 }
 

@@ -23,10 +23,6 @@ const TabelaInfo = (props) => {
     const [especies, setEspecies] = useState([]);
     const [naves, setNaves] = useState([]);
     const [search, setSearch] = useState("");
-
-
-
-   // 
     
    useEffect(() => {
         obterPessoas().then((pessoasData) => setPessoas(pessoasData));
@@ -34,6 +30,8 @@ const TabelaInfo = (props) => {
         obterEspecies().then((especiesData) => setEspecies(especiesData));
         obterNaves().then((navesData) => setNaves(navesData));
     }, []);
+
+    //const Pessoas = (obterPessoas.results).filter(pessoa => pessoa.name.toLowerCase().includes(search.toLowerCase()));
 
     return (
         <>
@@ -75,6 +73,7 @@ const TabelaInfo = (props) => {
                     <>
                         <div className="tabela">
                             <span className="tituloTabela">{props.tipo}</span>
+                            <input className="barraPesquisa" type="search" value={search} onChange={(e) => setSearch(e.target.value)}  />
                             <hr size="1" noshade color='#E9E9E9'/>
                             <table>
                                 <thead>
@@ -106,7 +105,7 @@ const TabelaInfo = (props) => {
                     <>
                         <div className="tabela">
                             <span className="tituloTabela">{props.tipo}</span>
-                            
+                            <input className="barraPesquisa" type="search" value={search} onChange={(e) => setSearch(e.target.value)}  />
                             <hr size="1" noshade color='#E9E9E9'/>
                             <table>
                                 <thead>
@@ -138,6 +137,7 @@ const TabelaInfo = (props) => {
                     <>
                         <div className="tabela">
                             <span className="tituloTabela">{props.tipo}</span>
+                            <input className="barraPesquisa" type="search" value={search} onChange={(e) => setSearch(e.target.value)}  />
                             <hr size="1" noshade color='#E9E9E9'/>
                             <table>
                                 <thead>

@@ -1,4 +1,3 @@
-import SideBar from './components/SideBar'
 import Dashboard from './components/Dashboard';
 
 import './App.css'

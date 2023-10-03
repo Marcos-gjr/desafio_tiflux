@@ -18,7 +18,7 @@ $ npm install react-router-dom axios
 # Execute a aplicação ReactJS
 $ npm start
 
-# O servidor irá se iniciar na porta:3000 - acesse <http://localhost:3000> caso não tenha aberto sozinho
+# O servidor irá se iniciar na porta:3000 - acesse <http://localhost:3000> caso não tenha aberto
 ```
 
 ### Tecnologias utilizadas 
