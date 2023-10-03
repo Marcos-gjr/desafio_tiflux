@@ -1,13 +1,19 @@
+import Header from './Header'
+import TabelaFilmes from './TabelaFilmes'
+import EspacoCards from './EspacoCards'
 
+
+import '../styles/Dashboard.css'
 
 
 
 const Dashboard = () => {
-    
+   
     return (
         <div className="dashboard">
-            <h1>Dashboard</h1>
-            
+            <Header />
+            <TabelaFilmes />
+            <EspacoCards />
         </div>
     )
 }

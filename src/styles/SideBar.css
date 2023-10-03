@@ -1,0 +1,83 @@
+.Side{
+    box-sizing: border-box;
+    background-color: #03363D;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+
+
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: #03363D; 
+    width: 15.2%;
+    height: 100%;
+    padding: 20px; 
+
+}
+
+.headerSidebar{
+    display: flex;
+    align-items: center;
+    margin-top: 20%;
+    margin-bottom: 30%;
+    margin-left: 28%;
+}
+
+.imgLogo{
+    height: 35px;
+    width: 115px;
+
+}
+
+.sidebar button{
+    background: transparent;
+    border: 0;
+    font-family: inherit;
+    color: inherit;
+    cursor: pointer;
+    padding: 0;
+    text-align: left;
+    margin-left: 17%;
+    
+}
+.sidebar button > span{
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    height: 70px;
+    padding-left: 16px;
+    padding-right: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 25px;
+}
+
+.sidebar button:hover > span{
+    background-color: #034149;
+    opacity: 0.9;
+    transition: 0.5s;
+}
+
+.txtDesc{
+    color: #CC4141;
+}
+
+
+
+
+.icon-dash {
+    height: 5vmin;
+    pointer-events: none;
+}
+.icon-ajust {
+    height: 5vmin;
+    pointer-events: none;
+}
+.icon-desc {
+    height: 5vmin;
+    pointer-events: none;
+}

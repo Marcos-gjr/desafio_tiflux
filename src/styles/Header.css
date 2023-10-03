@@ -1,0 +1,41 @@
+.Header{
+    box-sizing: border-box;
+    background-color: #f3f4f8;
+    font-family: 'Poppins', sans-serif;
+    color: #272727;
+    width: 100vw;
+    
+}
+
+.navBar{
+    position: relative;
+    width: 60vw;
+    top: 40%;
+    left: 26%;
+    display: inline-flex;
+    align-items: center;
+    padding: 20px; 
+
+}
+
+.LargeTitle{
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.btnsInfo{
+    margin-left: 70%;
+    display: inline-flex;
+    align-items: center;
+    gap: 22px;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+
+.userInfo{
+    display: inline-flex;
+    align-items: center;
+    gap: 3px;
+
+}
