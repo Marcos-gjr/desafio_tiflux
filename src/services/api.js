@@ -8,9 +8,9 @@ async function obterFilmes() {
     return filmes.data.results;
 }
 
-console.log(obterPessoas())
 async function obterPessoas() {
     const pessoas = (await getSwapi("people/"));
+    
 
     return pessoas.data;
 }
@@ -36,5 +36,28 @@ async function obterNaves() {
 function getSwapi(espec) {
     return axios.get(`https://swapi.dev/api/${espec}`);
 }
+
+/*
+async function fetchAllItems() {
+    const totalPages = 9; // O número total de páginas
+  
+    // Crie um array de promessas para buscar todas as páginas em paralelo
+    const promises = [];
+    for (let page = 1; page <= totalPages; page++) {
+      promises.push(fetchPage(page));
+    }
+    try {
+        // Aguarde todas as promessas serem resolvidas
+        const results = await Promise.all(promises);
+
+        // Combine os resultados de todas as páginas em um único array
+        const allItems = results.flat();
+
+        return allItems;
+    } catch (error) {
+        throw error;
+    }
+}*/
+
 
 export {obterFilmes, obterPessoas, obterPlanetas, obterEspecies, obterNaves};

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { obterPessoas, obterPlanetas, obterEspecies, obterNaves } from '../services/api'
 import Pessoas from '../assets/icons/Pessoas.svg'
 import Planetas from '../assets/icons/Planetas.svg'
@@ -28,51 +29,59 @@ const Cards = (props) => {
                 { 
                     props.tipo === 'Pessoas' ? 
                     <>
-                        <button className="btnPessoas">
-                            <aside className="headCard">
-                                <span className="titleCard">{props.tipo}</span>
-                            </aside>
-                            <aside className="bodyCard">
-                                <img src={Pessoas} alt="" />
-                                <span>{pessoas.count}</span>
-                            </aside>
-                        </button>
+                        <Link to="/pessoas" className="btnPessoas"> 
+                            <button className="btnPessoas">
+                                <aside className="headCard">
+                                    <span className="titleCard">{props.tipo}</span>
+                                </aside>
+                                <aside className="bodyCard">
+                                    <img src={Pessoas} alt="" />
+                                    <span>{pessoas && pessoas.count}</span>
+                                </aside>
+                            </button>
+                        </Link>
                     </> : 
                     props.tipo === 'Planetas' ?
                     <>
-                        <button className="btnPlanetas">
-                            <aside className="headCard">
-                                <span className="titleCard">{props.tipo}</span>
-                            </aside>
-                            <aside className="bodyCard">
-                                <img src={Planetas} alt="" />
-                                <span>{planetas.count}</span>
-                            </aside>
-                        </button>
+                        <Link to="/planetas" className="btnPlanetas">
+                            <button className="btnPlanetas">
+                                <aside className="headCard">
+                                    <span className="titleCard">{props.tipo}</span>
+                                </aside>
+                                <aside className="bodyCard">
+                                    <img src={Planetas} alt="" />
+                                    <span>{planetas && planetas.count}</span>
+                                </aside>
+                            </button>
+                        </Link>
                     </> :
                     props.tipo === 'Especies' ?
                     <>
-                        <button className="btnEspecies">
-                            <aside className="headCard">
-                                <span className="titleCard">{props.tipo}</span>
-                            </aside>
-                            <aside className="bodyCard">
-                                <img src={Especies} alt="" />
-                                <span>{especies.count}</span>
-                            </aside>
-                        </button>
+                        <Link to="/especies" className="btnEspecies">
+                            <button className="btnEspecies">
+                                <aside className="headCard">
+                                    <span className="titleCard">{props.tipo}</span>
+                                </aside>
+                                <aside className="bodyCard">
+                                    <img src={Especies} alt="" />
+                                    <span>{especies && especies.count}</span>
+                                </aside>
+                            </button>
+                        </Link>
                     </> :
                     props.tipo === 'Naves' ?
                     <>
-                        <button className="btnNaves">
-                            <aside className="headCard">
-                                <span className="titleCard">{props.tipo}</span>
-                            </aside>
-                            <aside className="bodyCard">
-                                <img src={Naves} alt="" />
-                                <span>{naves.count}</span>
-                            </aside>
-                        </button>
+                        <Link to="/naves" className="btnNaves">
+                            <button className="btnNaves">
+                                <aside className="headCard">
+                                    <span className="titleCard">{props.tipo}</span>
+                                </aside>
+                                <aside className="bodyCard">
+                                    <img src={Naves} alt="" />
+                                    <span>{naves && naves.count}</span>
+                                </aside>
+                            </button>
+                        </Link>
                     </> :
                     <span>Não foi possível carregar a imagem</span>
                 }
