@@ -61,7 +61,7 @@ async function fetchAllItems() {
             edited: item.edited
           }));
 
-        return extractedData;
+        return allItems;
     } catch (error) {
         throw error;
     }

@@ -1,9 +1,9 @@
 .Card{
     display: inline-block;
-    width: 270px;
-    height: 116px;
+    width: 250px;
+    height: 111px;
     font-family: 'Poppins', sans-serif;
-    margin-left: 37px;
+    margin-left: 63px;
 }
 
 .Card button{
@@ -15,7 +15,7 @@
     color: inherit;
     cursor: pointer;
     text-align:start;
-    padding-left: 17px;
+    padding-left: 18px;
 
 }
 
