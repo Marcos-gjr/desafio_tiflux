@@ -5,6 +5,8 @@
 
 ### Rodando o Projeto 
 
+#### O projeto pode ser acessado pela vercel através deste [link](https://desafio-tiflux.vercel.app) ou realizando o seguinte processo:
+
 ```bash
 # Clone este repositório
 $ git clone https://github.com/Marcos-gjr/desafio_tiflux.git
@@ -21,6 +23,7 @@ $ npm start
 # O servidor irá se iniciar na porta:3000 - acesse <http://localhost:3000> caso não tenha aberto
 ```
 
+
 ### Tecnologias utilizadas 
 As seguintes ferramentas foram utilizadas no desenvolvimento deste projeto:
 - [ReactJS](https://pt-br.reactjs.org/)
@@ -28,7 +31,7 @@ As seguintes ferramentas foram utilizadas no desenvolvimento deste projeto:
 - [Axios](https://axios-http.com/ptbr/docs/intro)
 - [Swapi](https://swapi.dev)
 
-Além do [Figma](https://www.figma.com/file/0ER9KKCsMXqn28BSoRRyrj/Desafio-FrontEnd?type=design&node-id=230-504&mode=design&t=YfBZl20mraT9qTt0-0) com o modelo para o desafio.
+Além do [Figma](https://www.figma.com/file/0ER9KKCsMXqn28BSoRRyrj/Desafio-FrontEnd?type=design&node-id=230-504&mode=design&t=YfBZl20mraT9qTt0-0) com o modelo para o desafio
 
 ---
 
