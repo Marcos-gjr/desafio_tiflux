@@ -4,7 +4,6 @@
 </h1>
 
 ### Rodando o Projeto 
-
 #### O projeto pode ser acessado pela vercel através deste [link](https://desafio-tiflux.vercel.app) ou realizando o seguinte processo:
 
 ```bash
@@ -30,6 +29,7 @@ As seguintes ferramentas foram utilizadas no desenvolvimento deste projeto:
 - [React Router](https://reactrouter.com/en/main)
 - [Axios](https://axios-http.com/ptbr/docs/intro)
 - [Swapi](https://swapi.dev)
+- [Vercel](https://vercel.com/)
 
 Além do [Figma](https://www.figma.com/file/0ER9KKCsMXqn28BSoRRyrj/Desafio-FrontEnd?type=design&node-id=230-504&mode=design&t=YfBZl20mraT9qTt0-0) com o modelo para o desafio
 
