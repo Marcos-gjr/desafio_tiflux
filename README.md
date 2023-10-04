@@ -1,6 +1,6 @@
 <!--te-->
 <h1 align="center">
-  Desafio "Tiflux" 🚀 Em desenvolvimento... 
+  Desafio "Tiflux" Finalizado
 </h1>
 
 ### Rodando o Projeto 
