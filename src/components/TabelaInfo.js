@@ -1,7 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { obterPessoas, obterPlanetas, obterEspecies, obterNaves } from '../services/api'
 
-
 import '../styles/TabelaInfo.css'
 
 
@@ -15,7 +14,7 @@ function formatarData(dataFornecida) {
     timeZone: "UTC" });
     return dataFormatada;
 }
-  // format(new Date(dataFornecida), "dd/MM/yyyy HH:mm", { timeZone: "UTC" });
+
 
 const TabelaInfo = (props) => {
     const [pessoas, setPessoas] = useState([]);
@@ -30,8 +29,6 @@ const TabelaInfo = (props) => {
         obterEspecies().then((especiesData) => setEspecies(especiesData));
         obterNaves().then((navesData) => setNaves(navesData));
     }, []);
-
-    //const Pessoas = (obterPessoas.results).filter(pessoa => pessoa.name.toLowerCase().includes(search.toLowerCase()));
 
     return (
         <>
@@ -54,7 +51,7 @@ const TabelaInfo = (props) => {
                                     </tr>
                                 </thead>
                                 <tbody>
-                                    {// name, height, birth_year, created, edited / console.log(pessoas.results[0].name)
+                                    {// name, height, birth_year, created, edited
                                         pessoas && pessoas.results && pessoas.results.map((pessoa) => (
                                             <tr key={pessoa.name}>
                                                 <td>{pessoa.name}</td>

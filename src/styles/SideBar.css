@@ -4,7 +4,6 @@
     font-family: 'Poppins', sans-serif;
     color: #fff;
 
-
 }
 
 .sidebar{
@@ -25,6 +24,7 @@
     margin-top: 20%;
     margin-bottom: 30%;
     margin-left: 28%;
+
 }
 
 .imgLogo{
@@ -54,12 +54,14 @@
     font-size: 18px;
     font-weight: 500;
     border-radius: 25px;
+
 }
 
 .sidebar button:hover > span{
     background-color: #034149;
     opacity: 0.9;
     transition: 0.5s;
+
 }
 
 .txtDash{
@@ -71,18 +73,18 @@
     color: #CC4141;
 }
 
-
-
-
 .icon-dash {
     height: 5vmin;
     pointer-events: none;
+
 }
 .icon-ajust {
     height: 5vmin;
     pointer-events: none;
+
 }
 .icon-desc {
     height: 5vmin;
     pointer-events: none;
+
 }

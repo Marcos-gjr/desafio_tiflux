@@ -2,9 +2,7 @@ import pesquisa from '../assets/icons/pesquisa.svg'
 import notificacao from '../assets/icons/notificacaoAtiva.svg'
 import user from '../assets/icons/user.svg'
 
-
 import '../styles/Header.css'
-
 
 
 const Header = () => {

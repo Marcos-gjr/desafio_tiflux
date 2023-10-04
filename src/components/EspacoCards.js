@@ -1,6 +1,6 @@
 import Card from './Card'
-import '../styles/EspacoCards.css'
 
+import '../styles/EspacoCards.css'
 
 
 const EspacoCards = () => {

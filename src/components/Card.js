@@ -1,6 +1,8 @@
 import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
+
 import { obterPessoas, obterPlanetas, obterEspecies, obterNaves } from '../services/api'
+
 import Pessoas from '../assets/icons/Pessoas.svg'
 import Planetas from '../assets/icons/Planetas.svg'
 import Especies from '../assets/icons/Especies.svg'
@@ -15,35 +17,14 @@ const Card = (props) => {
     const [especies, setEspecies] = useState([])
     const [naves, setNaves] = useState([])
     const [botaoAtivo, setBotaoAtivo] = useState(null)
-   // const url = window.location.pathname;
-
     
     useEffect(() => {
         obterPessoas().then((pessoasData) => setPessoas(pessoasData))
         obterPlanetas().then((planetasData) => setPlanetas(planetasData))
         obterEspecies().then((especiesData) => setEspecies(especiesData))
         obterNaves().then((navesData) => setNaves(navesData))
-    }, []);
+    }, [])
     
-    
-   /* useEffect(() => {
-
-
-        if (url === '/') {
-          document.querySelectorAll('.btn').forEach((botao) => {
-            botao.classList.remove(
-              'btnPessoasAtivo',
-              'btnPlanetasAtivo',
-              'btnEspeciesAtivo',
-              'btnNavesAtivo'
-            );
-          });
-          setBotaoAtivo(null);
-        }
-      }, [url]);*/
-    
-    
-
 
     const cardAtivo = (estado) => {
         document.querySelectorAll('.btn').forEach((botao) => {

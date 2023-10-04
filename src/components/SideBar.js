@@ -5,6 +5,7 @@ import ajustes from '../assets/icons/ajustes.svg';
 import desconectar from '../assets/icons/desconectar.svg';
 import logoSide from '../assets/logos/tifluxSide.svg';
 
+
 import '../styles/SideBar.css';
 
 const SideBar = () => {

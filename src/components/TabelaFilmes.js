@@ -4,7 +4,6 @@ import { obterFilmes } from '../services/api';
 import '../styles/TabelaFilmes.css'
 
 
-
 const TabelaFilmes = () => {
     const [filmes, setFilmes] = useState([]);
 
@@ -12,6 +11,7 @@ const TabelaFilmes = () => {
         obterFilmes().then((filmeData) => setFilmes(filmeData));
 
     }, []);
+
     
     return (
 
@@ -20,13 +20,12 @@ const TabelaFilmes = () => {
                 <span className="nomeTabela">Filmes</span>
                 {
                     filmes && filmes.map((filme) => (
-                            <aside key={filme.title} className="listaFilmes">
-                                <span  className="conteudoFilmes">
-                                    <span className="tituloFilme">{filme.title}</span>
-                                    <span className="dataFilme">{(filme.release_date).split('-').reverse().join('/')}</span>
-                                </span>
-                            </aside>
-                        
+                        <aside key={filme.title} className="listaFilmes">
+                            <span  className="conteudoFilmes">
+                                <span className="tituloFilme">{filme.title}</span>
+                                <span className="dataFilme">{(filme.release_date).split('-').reverse().join('/')}</span>
+                            </span>
+                        </aside>
                     ))
                 }
                 
