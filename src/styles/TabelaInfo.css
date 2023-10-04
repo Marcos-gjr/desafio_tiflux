@@ -69,15 +69,15 @@ thead tr{
     border-bottom: 1px solid #E9E9E9;
     padding: 11px;
     text-align: left;
-
+    background-color: #FAFAFA;
 }
 
 thead th{
     font-family: inherit;
     font-size: 14px;
     font-weight: 500;
-    padding-bottom: 1%;
-    padding-top: 0%;
+    padding-bottom: 0.8%;
+    padding-top: 0.8%;
     width: 50px;
 
 }
@@ -96,8 +96,8 @@ tbody td{
     font-family: 'Poppins', sans-serif;
     font-size: 14px;
     font-weight: 400;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     padding-left: 11px;
 
 }
