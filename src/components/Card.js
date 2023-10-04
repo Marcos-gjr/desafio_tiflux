@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 
 import { obterPessoas, obterPlanetas, obterEspecies, obterNaves } from '../services/api'
 
-import Pessoas from '../assets/icons/Pessoas.svg'
-import Planetas from '../assets/icons/Planetas.svg'
-import Especies from '../assets/icons/Especies.svg'
-import Naves from '../assets/icons/Naves.svg'
+import pessoasSvg from '../assets/icons/pessoas.svg'
+import planetasSvg from '../assets/icons/planetas.svg'
+import especiesSvg from '../assets/icons/especies.svg'
+import navesSvg from '../assets/icons/naves.svg'
 
 import '../styles/Card.css'
 
@@ -59,7 +59,7 @@ const Card = (props) => {
                                     <span className="titleCard">{props.tipo}</span>
                                 </aside>
                                 <aside className="bodyCard">
-                                    <img src={Pessoas} alt="" />
+                                    <img src={pessoasSvg} alt="" />
                                     <span>{pessoas && pessoas.count}</span>
                                 </aside>
                             </button>
@@ -73,7 +73,7 @@ const Card = (props) => {
                                     <span className="titleCard">{props.tipo}</span>
                                 </aside>
                                 <aside className="bodyCard">
-                                    <img src={Planetas} alt="" />
+                                    <img src={planetasSvg} alt="" />
                                     <span>{planetas && planetas.count}</span>
                                 </aside>
                             </button>
@@ -87,7 +87,7 @@ const Card = (props) => {
                                     <span className="titleCard">{props.tipo}</span>
                                 </aside>
                                 <aside className="bodyCard">
-                                    <img src={Especies} alt="" />
+                                    <img src={especiesSvg} alt="" />
                                     <span>{especies && especies.count}</span>
                                 </aside>
                             </button>
@@ -101,7 +101,7 @@ const Card = (props) => {
                                     <span className="titleCard">{props.tipo}</span>
                                 </aside>
                                 <aside className="bodyCard">
-                                    <img src={Naves} alt="" />
+                                    <img src={navesSvg} alt="" />
                                     <span>{naves && naves.count}</span>
                                 </aside>
                             </button>
